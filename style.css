@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: rgb(53, 53, 53);
+}
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(27, 27, 27, 0.8);
+    width: 100vw;
+    padding: 20px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 0 15px 0 black;
+}
+nav .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    
+    color: white;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding-left: 15px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 10px;
+}
+nav ul li a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    text-transform: capitalize;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: white;
+    color: rgba(27, 27, 27);
+}
+
+.introduction {
+    height: 100vh;
+    width: 100vw;
+    
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction .background {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+.introduction h1 {
+    color: rgb(168, 198, 198);
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.introduction h2 {
+    color: rgb(161, 225, 209);
+    font-size: 1.5em;
+    font-weight: 300;
+
+    text-transform: uppercase;
+}
+.about {
+    background: rgb(72, 72, 72);
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.blog {
+    background: rgb(24, 24, 24);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 200vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    background: rgb(37, 35, 35);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 300vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
