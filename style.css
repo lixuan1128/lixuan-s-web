@@ -9,14 +9,14 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background: rgb(53, 53, 53);
+    background: rgb(193,203,215);
 }
 nav {
     position: fixed;
     top: 0;
     z-index: 100;
 
-    background: rgba(27, 27, 27, 0.8);
+    background: rgba(236,236,234, 0.8);
     width: 100vw;
     padding: 20px 7%;
 
@@ -30,39 +30,71 @@ nav .logo {
     font-size: 1.5em;
     font-weight: 700;
     
-    color: white;
+    color: rgb(101,101,101);
 
     text-decoration: none;
     text-transform: uppercase;
 
     padding-left: 15px;
 }
-nav ul {
+nav  ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul li {
+nav  ul li {
     margin-left: 10px;
 }
 nav ul li a {
-    color: white;
+    color: rgb(101,101,101);
     font-weight: 400;
     text-decoration: none;
     border-radius: 20px;
     padding: 6px 15px;
     text-transform: capitalize;
 }
-nav ul li a:hover,
+nav  ul li a:hover,
 nav ul li a.active {
-    background-color: white;
-    color: rgba(27, 27, 27);
+    background-color: rgb(101,101,101);
+    color: rgb(236,236,234);
 }
-
+nav .hamburger-botton{
+    display: none;
+    right: 40px;
+    width: 38px ;
+    position: absolute;
+}
+@media (max-width:500px) {
+    nav .hamburger-list{
+        display: none;
+        width: 100%;
+    }
+    nav .hamburger-botton{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav  ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav  ul li{
+        margin-top:20px ;
+        text-align: center;
+    }
+    nav .hamburger-list.active{
+        display: flex;
+    }
+ 
+    
+}
 .introduction {
     height: 100vh;
     width: 100vw;
+    background: url(img/P1015580.JPG) 50%;
     
     position: absolute;
     top: 0;
@@ -72,14 +104,6 @@ nav ul li a.active {
     justify-content: center;
     align-items: center;
 }
-.introduction .background {
-    position: absolute;
-    z-index: -1;
-
-    width: 100%;
-
-    overflow: hidden;
-}
 .introduction h1 {
     color: rgb(168, 198, 198);
     font-size: 2em;
@@ -87,14 +111,14 @@ nav ul li a.active {
     text-transform: uppercase;
 }
 .introduction h2 {
-    color: rgb(161, 225, 209);
+    color: rgb(193,203,215);
     font-size: 1.5em;
     font-weight: 300;
 
     text-transform: uppercase;
 }
 .about {
-    background: rgb(72, 72, 72);
+    background: rgb(156,168,184);
     height: 100vh;
     width: 100vw;
 
@@ -103,25 +127,44 @@ nav ul li a.active {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center;    
+}
+.about img {
+    width: 25%;
+}
+.about .context {
+    width: 20%;
+    margin-left: 100px;
+    color: rgb(255, 255, 255);
     
 }
+.about .context h2 {
+    font-weight: 700;
+    font-size: 2em;
+
+}
 .blog {
-    background: rgb(24, 24, 24);
-    color: white;
     height: 100vh;
     width: 100vw;
+    background: url(img/photo_1.jpg) 50%;
+    color: white;
+    
 
     position: absolute;
     top: 200vh;
 
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+
+
 }
+
 .contact {
-    background: rgb(37, 35, 35);
+    background: rgb(156,168,184);
     color: white;
     height: 100vh;
     width: 100vw;
