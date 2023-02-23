@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh">
     <head>
+        <!-- base -->
         <meta charset="UTF-8">
-        <title>L&L</title>
-        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <title>Lixuan's | Home</title>
+        <!-- icon -->
+        <script src="https://kit.fontawesome.com/be743ebfd6.js" crossorigin="anonymous"></script>
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <!-- header navbar -->
         <nav>
             <a href="#" class="logo">lixuan's</a>
             <div class="hamburger-list">
                 <ul>
-                    <li><a href="#home" id="navHome" class="active">home</a></li>
-                    <li><a href="#about" id="navAbout">about</a></li>
-                    <li><a href="#blog" id="navBlog">blog</a></li>
-                    <li><a href="#contact" id="navContact">contact</a></li>
+                    <li><a href="#home" id="nav-home" class="button-active">home</a></li>
+                    <li><a href="#about" id="nav-about">about</a></li>
+                    <li><a href="#blog" id="nav-blog">blog</a></li>
+                    <li><a href="#contact" id="nav-contact">contact</a></li>
                 </ul>
             </div>
             <div class="hamburger-botton">
-                <img src="img/hamburgerButton.png">
+                <i class="fa-solid fa-burger"></i>
             </div>
         </nav>
+        <!-- section - home -->
         <div class="introduction" id="home">
             <h1>lixuan</h1>
             <h2>photographer</h2>
         </div>
+        <!-- section - about -->
         <div class="about" id="about">
-            <img src="img/otter.png" >
-            <div class="context">
-                <h2>Hi! I am LIXUAN. </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt id reprehenderit quae eligendi voluptatem velit recusandae accusamus tenetur? Id qui nihil, temporibus unde quae molestiae quidem porro atque nulla error.</p>
+            <img src="assets/img/otter.png">
+            <div class="about-context">
+                <h2>I am LIXUAN !</h2>
+                <p>I am a photographer, a student, a designer. Also a otter lover ! ! !</p>
             </div>
         </div>
-        <div class="blog" id="blog">
-            <div class="blogtext">
-                <h1>bloggggggggggggg</h1>
-            </div>
-        
-            <img src="img/photo_1.jpg">
+        <!-- section - blog -->
+        <div class="blog grid" id="blog">
+            <img src="assets/img/P1015480.JPG" class="blog-imgbox blog-imgboxA">
+            <img src="assets/img/P1015659.JPG" class="blog-imgbox blog-imgboxB">
+            <img src="assets/img/P1015580.JPG" class="blog-imgbox blog-imgboxC">
+            <img src="assets/img/photo_1.jpg" class="blog-imgbox blog-imgboxD">
+            <img src="assets/img/photo_2.jpg" class="blog-imgbox blog-imgboxE">
+            <img src="assets/img/photo_3.jpg" class="blog-imgbox blog-imgboxG">
+            <img src="assets/img/photo_1.jpg" class="blog-imgbox blog-imgboxH">
+            <img src="assets/img/photo_2.jpg" class="blog-imgbox blog-imgboxI">
         </div>
+        <!-- section - contact -->
         <div class="contact" id="contact">
-            <h1>contacttttttttttttt</h1>
+            <ul>
+                <li>
+                    <a href="#TWITTER">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#INSTAGRAM">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#FACEBOOK">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#DISCORD">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a herf="#GIHUB">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <script src="script.js"></script>
+        <!-- main script -->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
