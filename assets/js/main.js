@@ -21,14 +21,14 @@ window.addEventListener('scroll', () => {
             return
         }
         currentPage = navs[i]
-        currentPage.classList.add("button-active")
+        currentPage.classList.add("nav-active")
         
         navs.splice(i, 1)
 
         let j = 0
         do {
             let handler = navs[j]
-            handler.classList.remove("button-active")
+            handler.classList.remove("nav-active")
             j++
         } while (j < navs.length)
 
@@ -36,9 +36,10 @@ window.addEventListener('scroll', () => {
     }
 })
 
-const hamburgerbotton = document.getElementsByClassName('hamburger-botton')[0]
-const hamburgerlist = document.getElementsByClassName('hamburger-list')[0]
+// Toggle Hamburger List
+const hamburgerBotton = document.getElementById('hamburger-botton'),
+      hamburgerList = document.getElementById('hamburger-list')
 
-hamburgerbotton.addEventListener('click', () => {
-    hamburgerlist.classList.toggle('nav-toggle')
+hamburgerBotton.addEventListener('click', () => {
+    hamburgerList.classList.toggle('show-menu')
 })

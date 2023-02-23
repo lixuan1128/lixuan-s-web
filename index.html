@@ -15,46 +15,68 @@
     </head>
     <body>
         <!-- header navbar -->
-        <nav>
-            <a href="#" class="logo">lixuan's</a>
-            <div class="hamburger-list">
-                <ul>
-                    <li><a href="#home" id="nav-home" class="button-active">home</a></li>
-                    <li><a href="#about" id="nav-about">about</a></li>
-                    <li><a href="#blog" id="nav-blog">blog</a></li>
-                    <li><a href="#contact" id="nav-contact">contact</a></li>
+        <header class="header">
+            <nav class="nav flex">
+                <a href="#" class="nav-logo">LIXUAN'S</a>
+                <ul class="hamburger-list flex" id="hamburger-list">
+                    <li class="hamburger-item">
+                        <a href="#home" id="nav-home" class="hamburger-link nav-active">Home</a>
+                    </li>
+                    <li class="hamburger-item">
+                        <a href="#about" id="nav-about" class="hamburger-link">About</a>
+                    </li>
+                    <li class="hamburger-item">
+                        <a href="#blog" id="nav-blog" class="hamburger-link">Blog</a>
+                    </li>
+                    <li class="hamburger-item">
+                        <a href="#contact" id="nav-contact" class="hamburger-link">Contact</a>
+                    </li>
                 </ul>
-            </div>
-            <div class="hamburger-botton">
-                <i class="fa-solid fa-burger"></i>
-            </div>
-        </nav>
+                <div class="hamburger-botton" id="hamburger-botton">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+            </nav>
+        </header>
         <!-- section - home -->
-        <div class="introduction" id="home">
-            <h1>lixuan</h1>
-            <h2>photographer</h2>
-        </div>
-        <!-- section - about -->
-        <div class="about" id="about">
-            <img src="assets/img/otter.png">
-            <div class="about-context">
-                <h2>I am LIXUAN !</h2>
-                <p>I am a photographer, a student, a designer. Also a otter lover ! ! !</p>
+        <section class="home section flex" id="home">
+            <div class="home-context flex">
+                <h1 class="home-title title">lixuan</h1>
+                <h2 class="home-subtitle subtitle">photographer</h2>
+                <a href="#about" class="home-button flex">
+                    <span class="home-button-context">Explore</span>
+                    <i class="fa-solid fa-angles-down angles-down"></i>
+                </a>
             </div>
-        </div>
+            <!-- use css bg to repeat -->
+            <div class="home-background container"></div>
+        </section>
+        <!-- section - about -->
+        <section class="about section flex" id="about">
+            <img src="assets/img/lixuan-main.jpg" class="about-img">
+            <div class="about-context">
+                <h1 class="about-title title">
+                    I am Lixuan !
+                </h1>
+                <p>I am a photographer, a student, a designer.</p>
+                <p>Also a otter lover ! ! !</p>
+            </div>
+        </section>
         <!-- section - blog -->
-        <div class="blog grid" id="blog">
-            <img src="assets/img/P1015480.JPG" class="blog-imgbox blog-imgboxA">
-            <img src="assets/img/P1015659.JPG" class="blog-imgbox blog-imgboxB">
-            <img src="assets/img/P1015580.JPG" class="blog-imgbox blog-imgboxC">
-            <img src="assets/img/photo_1.jpg" class="blog-imgbox blog-imgboxD">
-            <img src="assets/img/photo_2.jpg" class="blog-imgbox blog-imgboxE">
-            <img src="assets/img/photo_3.jpg" class="blog-imgbox blog-imgboxG">
-            <img src="assets/img/photo_1.jpg" class="blog-imgbox blog-imgboxH">
-            <img src="assets/img/photo_2.jpg" class="blog-imgbox blog-imgboxI">
-        </div>
+        <section class="blog section" id="blog">
+            <h1 class="blog-title title"><< My Personal Blog >></h1>
+            <div class="blog-imgbox container">
+                <img src="assets/img/blog/top-left.jpg" class="blog-img">
+                <img src="assets/img/blog/top-mid.jpg" class="blog-img">
+                <img src="assets/img/home-main.jpg" class="blog-img">
+                <img src="assets/img/blog/mid-left.jpg" class="blog-img">
+                <img src="assets/img/blog/center.jpg" class="blog-img">
+                <img src="assets/img/blog/bot-left.jpg" class="blog-img">
+                <img src="assets/img/blog/mid-left.jpg" class="blog-img">
+                <img src="assets/img/blog/center.jpg" class="blog-img">
+            </div>
+        </section>
         <!-- section - contact -->
-        <div class="contact" id="contact">
+        <section class="contact section" id="contact">
             <ul>
                 <li>
                     <a href="#TWITTER">
@@ -77,12 +99,12 @@
                     </a>
                 </li>
                 <li>
-                    <a herf="#GIHUB">
+                    <a href="#GITHUB">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
             </ul>
-        </div>
+        </section>
         <!-- main script -->
         <script src="assets/js/main.js"></script>
     </body>
